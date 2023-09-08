@@ -1,0 +1,3 @@
+{'Омлет': [{'ingridient name': 'Яйцо ', 'quantity': 4, 'measure': ' шт'}, {'ingridient name': 'Молоко ', 'quantity': 200, 'measure': ' мл'}, {'ingridient name': 'Помидор ', 'quantity': 4, 'measure': ' шт'}]}
+{'Утка по-пекински': [{'ingridient name': 'Утка ', 'quantity': 2, 'measure': ' шт'}, {'ingridient name': 'Вода ', 'quantity': 4, 'measure': ' л'}, {'ingridient name': 'Мед ', 'quantity': 6, 'measure': ' ст.л'}, {'ingridient name': 'Соевый соус ', 'quantity': 120, 'measure': ' мл'}]}
+{'Запеченный картофель': [{'ingridient name': 'Картофель ', 'quantity': 2, 'measure': ' кг'}, {'ingridient name': 'Чеснок ', 'quantity': 6, 'measure': ' зубч'}, {'ingridient name': 'Сыр гауда ', 'quantity': 200, 'measure': ' г'}]}
