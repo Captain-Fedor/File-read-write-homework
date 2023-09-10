@@ -11,17 +11,30 @@ def count_file_lines(file:str):
 
 for file_name in file_list:
     sort_dict[file_name] = count_file_lines(file_name)
+
 sort_dict = sorted(sort_dict.items(), key = lambda x: x[1])
 print(sort_dict)
-def writing_file(file: str, length: int):
+def writing_file(file: str, length: int): # запись в финальный файл выбранного файла
     with codecs.open('final_task_3.txt', 'a', encoding='utf-8') as data:
         file +='\n'
         data.write(file)
         data.write(str(length)+'\n')
+    with codecs.open('1.txt', 'r', encoding='utf-8') as data:
+        file_list = data.readlines()
+    with codecs.open('final_task_3.txt', 'a', encoding='utf-8') as data:
+        for line in file_list:
+            data.write(line)
+а
+
+print(writing_file('1.txt', 6))
+
+
+
 #     with codecs.open(file, encoding='utf-8', 'r'):
 #     with codecs.open('final_task_3.txt',encoding='utf-8', 'a'):
 # #         ...
-writing_file('45.txt', 5)
+# for file in sort_dict:
+
 # for file_data in sort_dict:
 
 
