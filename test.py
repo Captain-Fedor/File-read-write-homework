@@ -1,11 +1,13 @@
 
 import codecs
 def writing_file(file: str, length: int):
+    print(file)
+    file_read = file
     with codecs.open('final_task_3.txt', 'a', encoding='utf-8') as data:
         file +='\n'
         data.write(file)
         data.write(str(length)+'\n')
-    with codecs.open('1.txt', 'r', encoding='utf-8') as data:
+    with codecs.open(file_read, 'r', encoding='utf-8') as data:
         f = data.readlines()
     return f
 

@@ -14,19 +14,27 @@ for file_name in file_list:
 
 sort_dict = sorted(sort_dict.items(), key = lambda x: x[1])
 print(sort_dict)
+
 def writing_file(file: str, length: int): # запись в финальный файл выбранного файла
+    print(file)
+    # print(f"'{file}'")
     with codecs.open('final_task_3.txt', 'a', encoding='utf-8') as data:
         file +='\n'
         data.write(file)
+        file = file.strip()
         data.write(str(length)+'\n')
-    with codecs.open('1.txt', 'r', encoding='utf-8') as data:
+
+    with codecs.open(file, 'r', encoding='utf-8') as data:
         file_list = data.readlines()
+        file_list[-1] = file_list[-1] + '\r\n'
+        print(file_list)
+        print(file_list[-1])
     with codecs.open('final_task_3.txt', 'a', encoding='utf-8') as data:
         for line in file_list:
             data.write(line)
-а
 
-print(writing_file('1.txt', 6))
+for file in sort_dict:
+    writing_file(file[0], file[1])
 
 
 
